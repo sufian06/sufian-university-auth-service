@@ -39,6 +39,11 @@
             "date": 1705289477485,
             "name": "D:\\fullStack-project\\sufian-university\\backend\\sufian-university-auth-service\\logs\\winston\\successes\\sum-2024-15-01-09-success.log",
             "hash": "e6adbd065a4343989186855578d1880a53ebb2293914cfc68521cb8e6c2473f2"
+        },
+        {
+            "date": 1705295745662,
+            "name": "D:\\fullStack-project\\sufian-university\\backend\\sufian-university-auth-service\\logs\\winston\\successes\\sum-2024-15-01-11-success.log",
+            "hash": "d54830bf070ddc5101e9e8bf3a145997c22bcb1167e24e3bdaee0dea5b9615a7"
         }
     ],
     "hashType": "sha256"
