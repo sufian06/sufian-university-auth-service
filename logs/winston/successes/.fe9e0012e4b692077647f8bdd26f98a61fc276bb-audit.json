@@ -6,21 +6,6 @@
     "auditLog": "D:\\fullStack-project\\sufian-university\\backend\\sufian-university-auth-service\\logs\\winston\\successes\\.fe9e0012e4b692077647f8bdd26f98a61fc276bb-audit.json",
     "files": [
         {
-            "date": 1703383496317,
-            "name": "D:\\fullStack-project\\sufian-university\\backend\\sufian-university-auth-service\\logs\\winston\\successes\\sum-2023-24-12-08-success.log",
-            "hash": "9d9278647625a550167d4cae2b051d39b9b1e214d77fd14407227990a9ff4078"
-        },
-        {
-            "date": 1703388643527,
-            "name": "D:\\fullStack-project\\sufian-university\\backend\\sufian-university-auth-service\\logs\\winston\\successes\\sum-2023-24-12-09-success.log",
-            "hash": "3bc96a95b8303d76bafd357c1c984f5a177b7c379ea04a8f757727da1c1de4f8"
-        },
-        {
-            "date": 1703558379767,
-            "name": "D:\\fullStack-project\\sufian-university\\backend\\sufian-university-auth-service\\logs\\winston\\successes\\sum-2023-26-12-08-success.log",
-            "hash": "f20c3e88d45ffe16eecec1878714ad5a8403ff49cb61c90eae43126cbc046229"
-        },
-        {
             "date": 1704198921273,
             "name": "D:\\fullStack-project\\sufian-university\\backend\\sufian-university-auth-service\\logs\\winston\\successes\\sum-2024-02-01-18-success.log",
             "hash": "e0f4ef44d90793723c6f7fa2cd177461e1c2d8ba51cf2eae29b3c579853aa742"
@@ -29,6 +14,31 @@
             "date": 1704546452633,
             "name": "D:\\fullStack-project\\sufian-university\\backend\\sufian-university-auth-service\\logs\\winston\\successes\\sum-2024-06-01-19-success.log",
             "hash": "f1300df80f4ab7d374880f1defc047c5e1fa102e211868f1ed4fa330f4069f22"
+        },
+        {
+            "date": 1704595188277,
+            "name": "D:\\fullStack-project\\sufian-university\\backend\\sufian-university-auth-service\\logs\\winston\\successes\\sum-2024-07-01-08-success.log",
+            "hash": "3f0d8a0d3cf32aceefc14ecd508c4e20a1af62cba3153cd07e4fc534d14eba6e"
+        },
+        {
+            "date": 1704597300758,
+            "name": "D:\\fullStack-project\\sufian-university\\backend\\sufian-university-auth-service\\logs\\winston\\successes\\sum-2024-07-01-09-success.log",
+            "hash": "e35bc5176b56258fb4131b7bc7a8f1ef81646edd5838b89243202bce80627f39"
+        },
+        {
+            "date": 1704680828039,
+            "name": "D:\\fullStack-project\\sufian-university\\backend\\sufian-university-auth-service\\logs\\winston\\successes\\sum-2024-08-01-08-success.log",
+            "hash": "44caaef15a2762a0196cac7ccdb6e7c699e4e3f6b4baf45d8c1539d1aa18507a"
+        },
+        {
+            "date": 1704939048575,
+            "name": "D:\\fullStack-project\\sufian-university\\backend\\sufian-university-auth-service\\logs\\winston\\successes\\sum-2024-11-01-08-success.log",
+            "hash": "07a7e4ccb07858bd067d5aef84e91dd4b6e3dc959bd61482642312ca267f5d1c"
+        },
+        {
+            "date": 1705289477485,
+            "name": "D:\\fullStack-project\\sufian-university\\backend\\sufian-university-auth-service\\logs\\winston\\successes\\sum-2024-15-01-09-success.log",
+            "hash": "e6adbd065a4343989186855578d1880a53ebb2293914cfc68521cb8e6c2473f2"
         }
     ],
     "hashType": "sha256"
