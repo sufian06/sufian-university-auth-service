@@ -1,0 +1,1 @@
+Sat Jan 20 2024 8:59 AM [SUM] error: AcademicSemester validation failed: title: `Department of Sufian` is not a valid enum value for path `title`., year: Path `year` is required., code: Path `code` is required., startMonth: Path `startMonth` is required., endMonth: Path `endMonth` is required.

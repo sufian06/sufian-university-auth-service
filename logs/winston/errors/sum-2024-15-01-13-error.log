@@ -1,0 +1,1 @@
+Mon Jan 15 2024 1:35 PM [SUM] error: AcademicSemester validation failed: title: `Biology` is not a valid enum value for path `title`., year: Path `year` is required., code: Path `code` is required., startMonth: Path `startMonth` is required., endMonth: Path `endMonth` is required.

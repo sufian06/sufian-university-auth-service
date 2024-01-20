@@ -4,9 +4,13 @@ import { IAcademicFaculty } from '../academicFaculty/academicFaculty.interface';
 export type IAcademicDepartment = {
   title: string;
   academicFaculty: Types.ObjectId | IAcademicFaculty;
+  syncId: string;
 };
 
-export type AcademicDepartmentModel = Model<IAcademicDepartment>;
+export type AcademicDepartmentModel = Model<
+  IAcademicDepartment,
+  Record<string, unknown>
+>;
 
 export type IAcademicDepartmentFilters = {
   searchTerm?: string;

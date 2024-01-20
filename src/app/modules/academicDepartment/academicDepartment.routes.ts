@@ -17,6 +17,7 @@ router.post(
 );
 
 router.get('/:id', AcademicDepartmentController.getSingleDepartment);
+
 router.get('/', AcademicDepartmentController.getAllDepartments);
 
 router.patch(
@@ -27,6 +28,7 @@ router.patch(
   auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
   AcademicDepartmentController.updateDepartment,
 );
+
 router.delete(
   '/:id',
   auth(ENUM_USER_ROLE.SUPER_ADMIN),

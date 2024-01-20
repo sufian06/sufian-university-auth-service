@@ -17,7 +17,19 @@ const createDepartment = catchAsync(async (req: Request, res: Response) => {
   sendResponse<IAcademicDepartment>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Aademic department created successfully!',
+    message: 'Academic department created successfully',
+    data: result,
+  });
+});
+
+const getSingleDepartment = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const result = await AcademicDepartmentService.getSingleDepartment(id);
+
+  sendResponse<IAcademicDepartment>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Academic department fetched successfully',
     data: result,
   });
 });
@@ -34,58 +46,40 @@ const getAllDepartments = catchAsync(async (req: Request, res: Response) => {
   sendResponse<IAcademicDepartment[]>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Academic departments retrieved successfully !',
+    message: 'Academic departments fetched successfully',
     meta: result.meta,
     data: result.data,
   });
 });
 
-const getSingleDepartment = catchAsync(async (req: Request, res: Response) => {
-  const id = req.params.id;
-
-  const result = await AcademicDepartmentService.getSingleDepartment(id);
-
-  sendResponse<IAcademicDepartment>(res, {
-    statusCode: httpStatus.OK,
-    success: true,
-    message: 'Single academic department retrieved successfully !',
-
-    data: result,
-  });
-});
-
 const updateDepartment = catchAsync(async (req: Request, res: Response) => {
-  const id = req.params.id;
-  const updatedData = req.body;
-
-  const result = await AcademicDepartmentService.updateDepartment(
-    id,
-    updatedData,
-  );
+  const { id } = req.params;
+  const result = await AcademicDepartmentService.updateDepartment(id, req.body);
 
   sendResponse<IAcademicDepartment>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Department updated successfully !',
+    message: 'Academic department updated successfully',
     data: result,
   });
 });
 
 const deleteDepartment = catchAsync(async (req: Request, res: Response) => {
-  const id = req.params.id;
+  const { id } = req.params;
   const result = await AcademicDepartmentService.deleteDepartment(id);
+
   sendResponse<IAcademicDepartment>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Department deleted successfully !',
+    message: 'Academic department deleted successfully',
     data: result,
   });
 });
 
 export const AcademicDepartmentController = {
   createDepartment,
-  getAllDepartments,
   getSingleDepartment,
+  getAllDepartments,
   updateDepartment,
   deleteDepartment,
 };

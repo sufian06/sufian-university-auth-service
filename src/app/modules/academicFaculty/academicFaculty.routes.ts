@@ -8,12 +8,7 @@ import { AcademicFacultyValidation } from './academicFaculty.validation';
 
 const router = express.Router();
 
-router.post(
-  '/create-faculty',
-  validateRequest(AcademicFacultyValidation.createAcademicFacultyZodSchema),
-  auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
-  AcademicFacultyController.createFaculty,
-);
+router.get('/', AcademicFacultyController.getAllFaculties);
 
 router.get(
   '/:id',
@@ -24,10 +19,12 @@ router.get(
   ),
   AcademicFacultyController.getSingleFaculty,
 );
-router.get(
-  '/',
 
-  AcademicFacultyController.getAllFaculties,
+router.post(
+  '/create-faculty',
+  validateRequest(AcademicFacultyValidation.createAcademicFacultyZodSchema),
+  auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
+  AcademicFacultyController.createFaculty,
 );
 
 router.patch(
