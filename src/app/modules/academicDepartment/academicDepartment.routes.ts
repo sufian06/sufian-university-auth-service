@@ -7,6 +7,9 @@ import { AcademicDepartmentValidation } from './academicDepartment.validation';
 
 const router = express.Router();
 
+router.get('/', AcademicDepartmentController.getAllDepartments);
+router.get('/:id', AcademicDepartmentController.getSingleDepartment);
+
 router.post(
   '/create-department',
   validateRequest(
@@ -15,10 +18,6 @@ router.post(
   auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
   AcademicDepartmentController.createDepartment,
 );
-
-router.get('/:id', AcademicDepartmentController.getSingleDepartment);
-
-router.get('/', AcademicDepartmentController.getAllDepartments);
 
 router.patch(
   '/:id',

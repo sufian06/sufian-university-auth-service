@@ -1,0 +1,1 @@
+Sun Jan 21 2024 6:30 PM [SUM] error: E11000 duplicate key error collection: sufian-university.academicfaculties index: title_1 dup key: { title: "Faculty of Sufian 2" }

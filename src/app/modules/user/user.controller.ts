@@ -14,7 +14,7 @@ const createStudent: RequestHandler = catchAsync(
     sendResponse<IUser>(res, {
       statusCode: httpStatus.OK,
       success: true,
-      message: 'Student created successfully !',
+      message: 'Student created successfully!',
       data: result,
     });
   },
