@@ -6,8 +6,12 @@ import { IPaginationOptions } from '../../../interfaces/pagination';
 
 import httpStatus from 'http-status';
 import ApiError from '../../../errors/ApiError';
+import { RedisClient } from '../../../shared/redis';
 import { User } from '../user/user.model';
-import { studentFilterableFields } from './student.constant';
+import {
+  EVENT_STUDENT_UPDATED,
+  studentFilterableFields,
+} from './student.constant';
 import { IStudent, IStudentFilters } from './student.interface';
 import { Student } from './student.model';
 
@@ -118,7 +122,14 @@ const updateStudent = async (
 
   const result = await Student.findOneAndUpdate({ id }, updatedStudentData, {
     new: true,
-  });
+  })
+    .populate('academicFaculty')
+    .populate('academicDepartment')
+    .populate('academicSemester');
+
+  if (result) {
+    await RedisClient.publish(EVENT_STUDENT_UPDATED, JSON.stringify(result));
+  }
 
   return result;
 };
